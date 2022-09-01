@@ -4,6 +4,7 @@
 
 <head>
 
+    <!--Style-->
     <link rel="stylesheet" href="style.css"/>
 
 </head>
@@ -11,17 +12,32 @@
 
 <body>
 
+    
 <div class="container"> <!--main div start-->
     <div class="box logo">Logo</div>
-    <div class="box header">Header</div>
+    <div class="box header">Sports Gear</div>
     <div class="box nav">Navbar</div>
-    <div class="box image1">Image 1</div>
-    <div class="box image2">Image 2</div>
-    <div class="box cart">Cart</div>
-    
+    <div onmouseover="tennisBatHover()" class="box image1"><p>Tennis Bat</p></div>
+    <div onmouseover="cricketBatHover()" class="box image2"><p>Cricket Bat</p></div>
+    <!--Cart Container starts-->
+    <div class="box cart">
+        <h1>Analytics</h1>
+        <p>Tennis Bat: <span id="tennisBatAnalytics"></span></p>
+        <p>Cricket Bat: <span id="cricketBatAnalytics"></span></p>
+        <hr>
+        <h1>CART</h1>
+        <p>Products</p>
+        <p>Items</p>
+        <p>Total</p>
+    </div>
+    <!--Cart Container ends-->
+
 </div> <!--main div ends-->
     
 </div>
+
+<!--Scripts-->
+<script src="script.js"></script>
 
 </body>
 
