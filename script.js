@@ -12,11 +12,13 @@ cricketBatElement.innerHTML = cricketBatCounter;
 // Hover Analytics
 function tennisBatHover() {
     tennisBatCounter++;
+    showData();
     tennisBatElement.innerHTML = tennisBatCounter;
 }
 
 function cricketBatHover() {
     cricketBatCounter++;
+    showData();
     cricketBatElement.innerHTML = cricketBatCounter;
 }
 
@@ -26,6 +28,14 @@ const labels = [
     'Tennis Bat',
     'Cricket Bat',
   ];
+  
+  let renderChart;
+
+  function showData(){
+    if (renderChart){
+        renderChart.destroy();
+    }
+  
 
   const data = {
     labels: labels,
@@ -33,7 +43,7 @@ const labels = [
       label: 'Hover Analytics',
       backgroundColor: ['rgb(255, 99, 132)','rgb(255, 99, 132)'],
       borderColor: 'rgb(255, 99, 132)',
-      data: [10, 10],
+      data: [tennisBatCounter, cricketBatCounter],
     }]
   };
 
@@ -43,7 +53,8 @@ const labels = [
     options: {}
   };
 
-  const myChart = new Chart(
+  renderChart= new Chart(
     document.getElementById('myChart'),
     config
   );
+  }
