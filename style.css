@@ -2,15 +2,16 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 35px;
+   
 }
 
 .box {
     width: 100%;
     height: auto;
-    min-height: 100px;
     border: 1px solid black; 
     text-align: center;
     justify-content: center;   
+    
 }
 
 .logo {
@@ -51,9 +52,16 @@
 }
 
 .cart {
-    height: 400px;
+    height: 600px;
     grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column-end: 7;
     grid-row-start: 7;
     grid-row-end: 12;
+    
+}
+
+
+#canv {
+    max-width: 600px;
+    max-height: 200px;
 }
