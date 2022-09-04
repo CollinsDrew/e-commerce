@@ -1,54 +1,45 @@
 <!DOCTYPE html>
-
 <html>
+    <head>
+        <title>E-Commerce</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 style="text-align: center;"> SportsGear </h1>
+        </header>
 
-<head>
+        <main>
 
-    <!--Style-->
-    <link rel="stylesheet" href="style.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <container onmouseenter="tennisBatHover()" >
+                <img src="imgs/tennis_racket.webp" alt="tennis bat.jpg" onclick="tennisOptions()"/>
+                <div id="showTennisOptionsHere"></div>
+            </container>
 
-</head>
+            <container onmouseenter="cricketBatHover()">
+                <img src="imgs/cricket_bat.webp" alt="cricket bat.jpg"/>
+                
+            </container>
 
+        
+            <div class="cart">
+                <h1>Analytics</h1>
+                <p>Tennis Bat:<span id="tennisBatAnalytics"></span></p>
+                <p>Cricket Bat:<span id="cricketBatAnalytics"></span></p>
+                <analytics>
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                </analytics>
+                <hr>
+                <h1>Cart</h1>
+                <p>Products:<span id="products"></span></p>
+                <p>Items:<span id="items"></span></p>
+                <p>Price:<span id="products"></span></p>
+            </div>
+        
+        </main>
 
-<body>
-
-    
-<div class="container"> <!--main div start-->
-    <div class="box logo">Logo</div>
-    <div class="box header">Sports Gear</div>
-    <div class="box nav">Navbar</div>
-    <div onmouseover="tennisBatHover()" class="box image1"><p>Tennis Bat</p></div>
-    <div onmouseover="cricketBatHover()" class="box image2"><p>Cricket Bat</p></div>
-
-    <!--Cart Container starts-->
-    <div class="box cart">
-        <h1>Analytics</h1>
-        <p>Tennis Bat: <span id="tennisBatAnalytics"></span></p>
-        <p>Cricket Bat: <span id="cricketBatAnalytics"></span></p>
-    <!--Canvas starts-->    
-
-        <div id="canv">
-            <canvas id="myChart"  height="100"></canvas>
-        </div>
-    <!--Canvas ends-->
-
-        <hr>
-        <h1>CART</h1>
-        <p>Products</p>
-        <p>Items</p>
-        <p>Total</p>
-    </div>
-    <!--Cart Container ends-->
-
-</div> <!--Main div ends-->
-    
-
-
-
-<!--Scripts-->
-<script src="script.js"></script>
-
-</body>
-
+        <!-- Scripts -->
+        <script src="script.js"></script>
+    </body>
 </html>

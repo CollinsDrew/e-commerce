@@ -1,67 +1,58 @@
-.container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 35px;
-   
+body{
+    width:100%;
+    height:auto;
+    background-color: antiquewhite;
 }
 
-.box {
-    width: 100%;
-    height: auto;
-    border: 1px solid black; 
-    text-align: center;
-    justify-content: center;   
-    
+header{
+    display:flex;
+    border:1px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:10px;
+    background: linear-gradient(125deg, rgba(50,24,208,1) 0%, rgba(5,178,246,1) 35%, rgba(152,7,244,1) 100%);
 }
 
-.logo {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
+main{
+    display:flex;
+    border:1px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:10px;
 }
 
-.header {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 5;
+container{
+    height:auto;
+    max-width: 400px;
+    padding:10px;
+    background: linear-gradient(125deg, rgba(50,24,208,1) 0%, rgba(5,178,246,1) 35%, rgba(152,7,244,1) 100%);
 }
 
-.nav {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
-.image1 {
-    height: 400px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 7;
-    grid-row-end: 12;
-}
-
-.image2 {
-    height: 400px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 7;
-    grid-row-end: 12;
-}
-
-.cart {
-    height: 600px;
-    grid-column-start: 3;
-    grid-column-end: 7;
-    grid-row-start: 7;
-    grid-row-end: 12;
-    
-}
-
-
-#canv {
+img{
+    width: 30%;
+    height:auto;
     max-width: 600px;
-    max-height: 200px;
+    min-width: 300px;
+    max-height: 400px;
+    min-height: 400px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+cart{
+    border:1px solid black;
+    padding: 40px;
+    background-color: aliceblue;
+    min-width:400px;
+}
+
+/* New elements */
+.newElement{
+    border:1px solid black;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    background-color: azure;
+    color:black;
 }
