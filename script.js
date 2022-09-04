@@ -70,6 +70,7 @@ function showData(){
       );
 }
 
+// buy and detail buttons
 let elementShowTennisOptionsHere = document.getElementById('showTennisOptionsHere');
 function check(){
     alert('checked');
@@ -89,17 +90,17 @@ function buyTennis(){
 
 function buyCricket(){
     
-    productsSelection[0].tennisBatSelectionCounter++;
-    itemsElement.innerHTML = productsSelection[0].tennisBatSelectionCounter;
+    productsSelection[0].cricketBatSelectionCounter++;
+    itemsElement.innerHTML = productsSelection[0].cricketBatSelectionCounter;
 }
 
-// cart stuff
+// cart 
 function tennisOptions(){
 
     // create new div element
     let newElement = document.createElement('div');
 
-    // add calss
+    // add class
     newElement.classList.add('newElement');
 
 
@@ -161,5 +162,5 @@ function cricketOptions(){
     newElement.appendChild(newBtnElement2);
 
     // append child to the div element
-    elementShowTennisOptionsHere.appendChild(newElement);   
+    elementShowCricketOptionsHere.appendChild(newElement);   
 }
