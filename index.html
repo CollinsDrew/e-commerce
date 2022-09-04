@@ -6,23 +6,26 @@
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
     <body>
+
         <header>
             <h1 style="text-align: center;"> SportsGear </h1>
         </header>
 
-        <main>
+        <main><!--Main div starts-->
 
+            <!--Bat div starts-->
             <container onmouseenter="tennisBatHover()" >
                 <img src="imgs/tennis_racket.webp" alt="tennis bat.jpg" onclick="tennisOptions()"/>
                 <div id="showTennisOptionsHere"></div>
             </container>
 
             <container onmouseenter="cricketBatHover()">
-                <img src="imgs/cricket_bat.webp" alt="cricket bat.jpg"/>
-                
+                <img src="imgs/cricket_bat.webp" alt="cricket bat.jpg" onclick="cricketOptions()"/>
+                <div id="showCricketOptionsHere"></div>
             </container>
+            <!--Bat div ends-->
 
-        
+            <!--Cart div starts-->
             <div class="cart">
                 <h1>Analytics</h1>
                 <p>Tennis Bat:<span id="tennisBatAnalytics"></span></p>
@@ -36,8 +39,9 @@
                 <p>Items:<span id="items"></span></p>
                 <p>Price:<span id="products"></span></p>
             </div>
+            <!--Cart div ends-->
         
-        </main>
+        </main><!--Main div ends-->
 
         <!-- Scripts -->
         <script src="script.js"></script>

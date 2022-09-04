@@ -74,12 +74,25 @@ let elementShowTennisOptionsHere = document.getElementById('showTennisOptionsHer
 function check(){
     alert('checked');
 }
+
+let elementShowCricketOptionsHere = document.getElementById('showCricketOptionsHere');
+function check(){
+    alert('checked');
+}
+
 function buyTennis(){
     
     productsSelection[0].tennisBatSelectionCounter++;
     itemsElement.innerHTML = productsSelection[0].tennisBatSelectionCounter;
 
 }
+
+function buyCricket(){
+    
+    productsSelection[0].tennisBatSelectionCounter++;
+    itemsElement.innerHTML = productsSelection[0].tennisBatSelectionCounter;
+}
+
 // cart stuff
 function tennisOptions(){
 
@@ -113,6 +126,40 @@ function tennisOptions(){
     newElement.appendChild(newBtnElement2);
 
     // append child to the div element
-    elementShowTennisOptionsHere.appendChild(newElement);
-    
+    elementShowTennisOptionsHere.appendChild(newElement);      
+}
+
+function cricketOptions(){
+
+    // create new div element
+    let newElement = document.createElement('div');
+
+    // add calss
+    newElement.classList.add('newElement');
+
+
+    // create new button element for view details
+    let newBtnElement = document.createElement('button');
+
+    // add some content
+    newBtnElement.textContent = "View Details";
+
+    // add event listener
+    newBtnElement.addEventListener("click",check);
+
+    // create new button element for buying
+    let newBtnElement2 = document.createElement('button');
+
+    // add some content
+    newBtnElement2.textContent = "Buy Now";
+
+    // add event listener
+    newBtnElement2.addEventListener("click",buyCricket);
+
+    // append the button element to the new element div
+    newElement.appendChild(newBtnElement);
+    newElement.appendChild(newBtnElement2);
+
+    // append child to the div element
+    elementShowTennisOptionsHere.appendChild(newElement);   
 }
