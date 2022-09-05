@@ -24,9 +24,11 @@ main{
 }
 
 container{
-    height:auto;
+    max-height:500px;
     max-width: 400px;
     padding:10px;
+    background-color: navy;
+    padding: 10px;
 }
 
 img{
@@ -37,6 +39,10 @@ img{
     max-height: 400px;
     min-height: 400px;
     box-shadow: 10px 10px 5px #aaaaaa;
+    transform: rotate(10deg);
+    transform: scale(0.75);
+    transform: translate(-5%, -5%);
+    transform: skew(-10deg, -10deg);
 }
 
 cart{

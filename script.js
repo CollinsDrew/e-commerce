@@ -1,7 +1,7 @@
 'use strict'
 
 //console.log('Check')
-// Event? --> on hovering the product I want the number of times I have done
+// Event? --> on hovering the product I want the number of times I have passed
 
 let tennisBatCounter = 0;
 let cricketBatCounter = 0;
