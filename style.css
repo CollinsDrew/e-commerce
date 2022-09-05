@@ -27,7 +27,6 @@ container{
     height:auto;
     max-width: 400px;
     padding:10px;
-    
 }
 
 img{
@@ -53,6 +52,6 @@ cart{
     padding: 10px;
     text-align: center;
     margin: 10px;
-    background-color: azure;
+    background-color: white;
     color:black;
 }

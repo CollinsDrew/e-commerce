@@ -6,15 +6,16 @@
 let tennisBatCounter = 0;
 let cricketBatCounter = 0;
 
-// products cart details
+// product cart details
 let productsSelection = [
-    
-    {name:'Tennis Bat',tennisBatSelectionCounter:0},
-    {name:'Cricket Bat',cricketBatSelectionCounter:0},
+
+    {name:'Tennis Bat',tennisBatSelectionCounter:0, price: 50},
+    {name:'Cricket Bat',cricketBatSelectionCounter:0, price: 100},
 ]
 
 let itemsElement = document.getElementById('items');
-
+let productsElement = document.getElementById('products');
+let priceElement = document.getElementById('price');
 
 // function for tennis bat hover
 
@@ -85,13 +86,17 @@ function buyTennis(){
     
     productsSelection[0].tennisBatSelectionCounter++;
     itemsElement.innerHTML = productsSelection[0].tennisBatSelectionCounter;
-
+    productsElement.innerHTML = productsSelection[0].name;
+    priceElement.innerHTML = productsSelection[0].tennisBatSelectionCounter * productsSelection[0].price;
 }
 
 function buyCricket(){
     
-    productsSelection[0].cricketBatSelectionCounter++;
-    itemsElement.innerHTML = productsSelection[0].cricketBatSelectionCounter;
+    productsSelection[1].cricketBatSelectionCounter++;
+    itemsElement.innerHTML = productsSelection[1].cricketBatSelectionCounter;
+    itemsElement.innerHTML = productsSelection[1].cricketBatSelectionCounter;
+    productsElement.innerHTML = productsSelection[1].name;
+    priceElement.innerHTML = productsSelection[1].cricketBatSelectionCounter * productsSelection[0].price;
 }
 
 // cart 
