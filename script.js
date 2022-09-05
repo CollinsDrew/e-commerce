@@ -9,7 +9,7 @@ let cricketBatCounter = 0;
 // product cart details
 let productsSelection = [
 
-    {name:'Tennis Bat',tennisBatSelectionCounter:0, price: 50},
+    {name:'Tennis Bat',tennisBatSelectionCounter:0, price: 30},
     {name:'Cricket Bat',cricketBatSelectionCounter:0, price: 100},
 ]
 
@@ -85,18 +85,19 @@ function check(){
 function buyTennis(){
     
     productsSelection[0].tennisBatSelectionCounter++;
-    itemsElement.innerHTML = productsSelection[0].tennisBatSelectionCounter;
-    productsElement.innerHTML = productsSelection[0].name;
-    priceElement.innerHTML = productsSelection[0].tennisBatSelectionCounter * productsSelection[0].price;
+    itemsElement.innerHTML = productsSelection[1].cricketBatSelectionCounter + productsSelection[0].tennisBatSelectionCounter;
+    priceElement.innerHTML = (productsSelection[0].tennisBatSelectionCounter * productsSelection[0].price) + (productsSelection[1].cricketBatSelectionCounter * productsSelection[1].price) ;
+    productsElement.innerHTML = productsSelection[0].name + ":" + productsSelection[0].tennisBatSelectionCounter + ","
+                          + productsSelection[1].name + ":" + productsSelection[1].cricketBatSelectionCounter ;
 }
 
 function buyCricket(){
     
     productsSelection[1].cricketBatSelectionCounter++;
-    itemsElement.innerHTML = productsSelection[1].cricketBatSelectionCounter;
-    itemsElement.innerHTML = productsSelection[1].cricketBatSelectionCounter;
-    productsElement.innerHTML = productsSelection[1].name;
-    priceElement.innerHTML = productsSelection[1].cricketBatSelectionCounter * productsSelection[0].price;
+    itemsElement.innerHTML = productsSelection[1].cricketBatSelectionCounter + productsSelection[0].tennisBatSelectionCounter;
+    priceElement.innerHTML = (productsSelection[0].tennisBatSelectionCounter * productsSelection[0].price) + (productsSelection[1].cricketBatSelectionCounter * productsSelection[1].price) ;
+    productsElement.innerHTML = productsSelection[0].name + ":" + productsSelection[0].tennisBatSelectionCounter + ","
+                          + productsSelection[1].name + ":" + productsSelection[1].cricketBatSelectionCounter ;
 }
 
 // cart 
